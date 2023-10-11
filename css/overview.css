@@ -1,0 +1,161 @@
+/* primary fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+/* secondary fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root {
+    --blue: #264f7a;
+    --yellow: #ffc107;
+    --white: #fff;
+    --prim-font: 'Roboto Condensed', sans-serif;
+    --sec-font: 'Josefin Sans', sans-serif;
+}
+
+.overviewcard{
+    width: 90%;
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+}
+
+.ordercard{
+    justify-content: space-evenly;
+}
+
+.orderform{
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    padding: 2rem 0;
+    border-radius: 1rem;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.orderform_heading{
+    width: 95%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: left;
+}
+.orderform_heading h2{
+    margin-right: 1rem;
+    font-family: var(--prim-font);
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.cards{
+    width:23%;
+    cursor: pointer;
+    padding: 1.5rem 1rem;
+    /* background-color: lightcoral; */
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.cards h3{
+    font-family: var(--prim-font);
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+    font-weight: 300;
+    color: rgb(68, 56, 56);
+}
+
+a{
+    text-decoration: none;
+}
+
+.cards p{
+    font-size: 1.1rem;
+    font-family: var(--prim-font);
+    letter-spacing: .1rem;
+  font-weight: 100;
+    color: rgb(68, 56, 56);
+}
+.cards img{
+    margin: 2rem 0;
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .overviewcard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .cards{
+        width: 35%;
+        margin: 1rem 0 ;
+
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .overviewcard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .cards{
+        width: 35%;
+        margin: 1rem 0 ;
+       
+
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    
+
+ 
+
+    .overviewcard{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2.5rem auto;
+        /* justify-content: space-around; */
+    }
+
+    .cards{
+        width: 60%;
+        margin: 1rem auto ;
+       
+
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .overviewcard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .cards{
+        width: 70%;
+        margin: 1rem 0 ;
+
+    }
+
+}

@@ -1,0 +1,110 @@
+/* primary fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+/* secondary fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root {
+    --blue: #264f7a;
+    --yellow: #ffc107;
+    --white: #fff;
+    --prim-font: 'Roboto Condensed', sans-serif;
+    --sec-font: 'Josefin Sans', sans-serif;
+}
+
+
+
+.account_section {
+    width: 87.5%;
+    margin: 1rem auto;
+
+}
+
+.profile_sec{
+    margin-bottom: 2rem;
+}
+
+.profile_sec img {
+    width: 100px;
+    height: 100px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+}
+
+.new_photo {
+    font-size: .9rem;
+    margin-top: 10px;
+    font-family: var(--prim-font);
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: rgb(117, 117, 117);
+}
+
+.input_section {
+    padding: 1.2rem 0;
+    width: 100%;
+    margin-bottom: 3rem;
+    display: flex;
+    border-bottom: 1px solid rgb(117, 117, 117);
+    justify-content: space-between;
+}
+
+.name_css {
+    font-size: 1.2rem;
+    font-family: var(--prim-font);
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: rgb(117, 117, 117);
+}
+
+.edit_css{
+    font-size: 1.5rem;
+    color: rgb(117, 117, 117);
+}
+
+.company_info{
+    width: 50%;
+    margin:4rem 0;
+    padding: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 1rem;
+}
+
+.company_text{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: var(--prim-font);
+
+}
+
+.company_icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+
+
+@media only screen and (max-width: 800px){
+    .company_info{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .company_info{
+        width: 90%;
+        margin:4rem auto;
+    }
+}

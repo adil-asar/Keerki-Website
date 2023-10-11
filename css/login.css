@@ -1,0 +1,544 @@
+/* primary fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+/* secondary fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root {
+    --blue: #264f7a;
+    --yellow: #ffc107;
+    --white: #fff;
+    --prim-font: 'Roboto Condensed', sans-serif;
+    --sec-font: 'Josefin Sans', sans-serif;
+}
+
+/* navbar */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--prim-font);
+    font-size: 1.1rem;
+    background-color: var(--blue);
+    padding: .5rem 4rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+}
+
+.brand_logo {
+    width: 25%;
+
+    text-align: center;
+}
+
+.logo_css {
+    width: 50%;
+}
+
+.menu {
+    width: 60%;
+    color: var(--white);
+}
+
+
+nav a {
+    text-decoration: none;
+    width: 100%;
+    color: var(--white);
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+#toggler,
+label {
+    display: none;
+}
+
+/* login  */
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url('../images/introImage.bd15b158.png');
+    background-size: cover;
+    height: auto;
+    background-color: var(--blue);
+    margin-top: 3.3rem;
+
+}
+
+.login_logo {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 70%;
+}
+
+.login_form {
+    width: 55%;
+    padding: 2rem 3rem;
+    background-color: var(--white);
+}
+
+.keerki{
+    width: 100%;
+    /* background-color: #ffc107; */
+    text-align: center;
+    padding: 2rem 0;
+    display: none;
+}
+
+.keerki_img{
+    width: 60%;
+}
+
+ a{
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 1.1rem;
+    font-family: var(--prim-font);
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+}
+
+small{
+    font-size: 1rem;
+    font-family: var(--prim-font);
+    font-weight: 100;
+    letter-spacing: 0.1rem; 
+    margin: 5px 0;
+}
+
+.fa-arrow-left{
+    margin-right: 1rem;
+}
+
+h2{
+    font-size: 2rem;
+    font-family: var(--prim-font);
+    letter-spacing: 0.1rem;  
+}
+
+p{
+    font-size: 1.1rem;
+    font-family: var(--prim-font);
+    font-weight: 100;
+    margin: 1rem auto;
+    letter-spacing: 0.1rem; 
+}
+
+hr{
+    height: 3px;
+    color: grey;
+    background-color:gray;
+    margin-bottom: 1rem;
+}
+
+.form_css{
+    width: 65%;
+    margin: 4rem auto;
+    padding: 1rem;
+
+}
+
+.inp_css{
+    width: 100%;
+    margin: 1rem 0;
+    height: 3.5rem;
+    padding: 1rem 0.5rem;
+    outline: none;
+    border:1px solid lightgray;
+    font-size: 1rem;
+    font-family: var(--prim-font);
+    letter-spacing: .1rem;
+    border-radius: .5rem;
+}
+.submit{
+    background-color: rgb(15, 140, 182);
+    margin: 4rem 0;
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+.or_css{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.hr_css{
+    width: 47%;
+    margin-top: 1rem;
+}
+
+.login_btns{
+    font-size: 1rem;
+    font-family: var(--prim-font);
+    letter-spacing: .1rem;
+    border-radius: .5rem; 
+    width: 100%;
+    margin: 1.5rem 0;
+    height: 3.5rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_8{
+    width: 25px;
+    margin-right: 1rem;
+}
+.login_btns:hover{
+    border: 1px solid var(--blue);
+}
+
+
+/* *********************************************************************************************************************** */
+
+
+@media only screen and (max-width: 1000px) {
+    nav {
+        padding: 0rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+
+    }
+
+    .brand_logo {
+        width: 45%;
+        text-align: right;
+        padding: 0;
+    }
+
+    .menu {
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    label {
+        display: inline-flex;
+        width: 20%;
+    }
+
+    .logo_css {
+        width: 60%;
+    }
+
+    .fa-bars {
+        font-size: 1.4rem;
+        color: var(--white);
+        margin: auto;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list>li {
+        margin: .5rem 0;
+    }
+
+    /* main */
+    
+.login_logo {
+    width: 40%;
+}
+
+.login_form {
+    width: 60%;
+    padding: 3rem 1.5rem;
+    background-color: var(--white);
+}
+
+.form_css{
+    width: 80%;
+}
+
+
+}
+
+/* ******************************************************************************************************************* */
+@media only screen and (max-width: 800px) {
+
+    nav {
+        padding: 0rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .brand_logo {
+        width: 50%;
+        text-align: right;
+        padding: 0
+    }
+
+    .menu {
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    label {
+        display: inline-flex;
+        width: 20%;
+    }
+
+    .logo_css {
+        width: 60%;
+    }
+
+    .fa-bars {
+        font-size: 1.4rem;
+        color: var(--white);
+        margin: auto;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list>li {
+        margin: .5rem 0;
+    }
+
+     /* main */
+    
+.main{
+    display: block;
+}
+
+.login_logo {
+    width: 40%;
+    display: none;
+}
+
+.login_form {
+    width: 100%;
+    padding: 3rem 1rem;
+    background-color: var(--white);
+}
+.keerki{
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0;
+    display: block;
+}
+
+.keerki_img{
+    width: 50%;
+    background-color: var(--blue);
+    border-radius: 1rem;
+}
+
+.form_css{
+    width: 85%;
+    padding: 0;
+
+}
+  
+}
+
+/* ****************************************************************************************************** */
+
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: .5rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .brand_logo {
+        width: 50%;
+        text-align: right;
+        padding: 0;
+    }
+
+    .menu {
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    label {
+        display: inline-flex;
+        width: 20%;
+    }
+
+    .logo_css {
+        width: 60%;
+    }
+
+    .fa-bars {
+        font-size: 1.4rem;
+        color: var(--white);
+        margin: auto;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .list>li {
+        margin: .5rem 0;
+    }
+
+        /* main */
+        .main{
+            display: block;
+        }
+        
+        .login_logo {
+            width: 40%;
+            display: none;
+        }
+        
+        
+        .login_form {
+            width: 100%;
+            padding: 3rem 1rem;
+            background-color: var(--white);
+        }
+        
+        
+        .form_css{
+            width: 95%;
+            padding: 0;
+        }
+        
+}
+
+/* ********************************************************************************************************* */
+
+
+@media only screen and (max-width: 400) {
+    nav {
+        padding: .5rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+
+    }
+    
+
+    .brand_logo {
+        width: 50%;
+        text-align: right;
+        padding: 0;
+    }
+
+    
+    .menu {
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    label {
+        display: inline-flex;
+        width: 20%;
+    }
+    
+
+    .logo_css {
+        width: 60%;
+    }
+
+    .fa-bars {
+        font-size: 1.4rem;
+        color: var(--white);
+        margin: auto;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+
+    .list>li {
+        margin: .5rem 0;
+    }
+
+    
+    /* main */
+        .main{
+            display: block;
+        }
+        
+        .login_logo {
+            width: 40%;
+            display: none;
+        }
+        
+        
+        .login_form {
+            width: 100%;
+            padding: 3rem 1rem;
+            background-color: var(--white);
+        }
+        
+        
+        .form_css{
+            width: 85%;
+            background-color: #ffc107;
+            padding: 0;
+        }
+        
+
+}

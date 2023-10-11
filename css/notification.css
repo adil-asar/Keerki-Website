@@ -1,0 +1,237 @@
+/* primary fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+/* secondary fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root {
+    --blue: #264f7a;
+    --yellow: #ffc107;
+    --white: #fff;
+    --prim-font: 'Roboto Condensed', sans-serif;
+    --sec-font: 'Josefin Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: var(--prim-font);
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1rem;
+    font-family: var(--prim-font);
+    letter-spacing: 1px;
+      font-weight: 100;
+}
+
+strong{
+    font-size: 1.2rem;
+    font-family: var(--prim-font);
+    letter-spacing: 1px;
+    margin-bottom:  1rem !important;
+    font-weight: 400; 
+}
+.notification_section {
+    width: 90%;
+margin-top: 5rem;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 2rem;
+
+}
+
+table {
+    width: 100%;
+    border: .5px solid rgb(226, 221, 221);
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+td {
+    border: .5px solid rgb(226, 221, 221);
+    padding: 1.5rem 3rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.notification_head {
+    width: 50%;
+}
+
+.notification_head h2 {
+    font-family: var(--prim-font);
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+
+.status_butttons {
+    width: 50%;
+    text-align: right;
+}
+
+.unread_button {
+    padding: 8px 30px;
+    background-color: rgb(57, 149, 206);
+    font-family: var(--prim-font);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin-right: .5rem;
+    color: var(--white);
+    border: 1px solid rgb(57, 149, 206);
+
+}
+
+
+
+.read_button {
+    padding: 8px 30px;
+    font-family: var(--prim-font);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-left: .5rem;
+    border-radius: 5px;
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+}
+
+.hover_row:hover{
+background-color: lightgray;
+cursor: pointer;
+}
+
+.dismiss{
+    padding: 5px 20px;
+    font-family: var(--prim-font);
+    font-size: 1rem;
+    letter-spacing: 1px;  
+    background-color:red;
+    border: none; 
+    border-radius: 5px;
+    color: var(--white);
+}
+.notification_footer{
+    margin-top: 2rem !important;
+    margin-bottom: 0;
+}
+
+.order_div{
+    display: flex;
+    margin-top: 12px;
+}
+.order_div p{
+margin-right: 4rem;
+}
+
+
+/* Define media queries for responsiveness */
+@media screen and (max-width: 700px) {
+
+    .notification_section {
+        width: 90%;
+        margin: 1rem auto;
+    
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .notification_head {
+        width: 100%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .notification_head h2 {
+        font-size: 1.5rem;
+        margin-bottom: 7.5px;
+    }
+
+    .status_butttons {
+        width: 100%;
+        text-align: center;
+    }
+    .order_div{
+        display: flex;
+        margin-top: 12px;
+       justify-content: center;  
+    }
+
+    .order_div p{
+        margin-right: 2rem;
+        }
+    
+}
+
+@media screen and (max-width: 400px) {
+    table {
+        width: 100%;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .notification_head {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .notification_head h2 {
+        font-size: 1.5rem;
+        margin-bottom: 7.5px;
+    }
+
+    .status_butttons {
+        width: 100%;
+        text-align: center;
+
+    }
+    .unread_button{
+        padding: 6px 20px;
+        font-size: .9rem;
+        margin-right: 5px;
+      }
+    .read_button{
+        padding: 6px 20px;
+        font-size: .9rem;
+        margin-left: 5px;
+       
+    }
+
+    .order_div{
+        display: flex;
+        margin-top: 12px;
+       justify-content: center;  
+    }
+
+    .order_div p{
+        margin-right: 2rem;
+        }
+    
+}

@@ -1,0 +1,2012 @@
+/* primary fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+/* secondary fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root {
+    --blue: #264f7a;
+    --yellow: #ffc107;
+    --white: #fff;
+    --prim-font: 'Roboto Condensed', sans-serif;
+    --sec-font: 'Josefin Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--prim-font);
+}
+
+p {
+    font-family: var(--prim-font);
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    font-weight: 200;
+    color: var(--white);
+
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: var(--prim-font);
+    text-align: center;
+    letter-spacing: .1rem;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+}
+
+h2 {
+    font-family: var(--prim-font);
+    text-align: center;
+    letter-spacing: .1rem;
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: var(--white);
+
+}
+
+body {
+    background-color: var(--blue);
+}
+
+/* .nav_parent {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+} */
+
+/* .nav_buttons {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+} */
+
+.register_btn {
+    font-size: 1rem;
+    background: transparent;
+    width: 8rem;
+    height: 2.5rem;
+    margin-right: .7rem;
+    font-family: var(--prim-font);
+    color: var(--white);
+    border: 1px solid var(--white);
+    font-weight: 100;
+    letter-spacing: .1rem;
+}
+
+.register_btn:hover {
+    background: var(--white);
+    color: black;
+}
+
+.login_btn {
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+    font-family: var(--prim-font);
+    font-weight: 100;
+    border: 1px solid var(--yellow);
+    letter-spacing: .1rem;
+    background-color: var(--yellow);
+}
+
+.login_btn:hover {
+    background-color: orange;
+    color: black;
+}
+
+/* navbar */
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--prim-font);
+    font-size: 1.1rem;
+    background-color: var(--blue) !important;
+    padding: 5px 3rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+}
+
+.brand_logo {
+    width: 17.5%;
+    text-align: center;
+}
+
+.logo_css {
+    width: 100%;
+}
+
+.menu {
+    width: 75%;
+    color: var(--white);
+    background-color: var(--blue) !important;
+    margin: 0;
+    padding: 0px 1rem;
+}
+
+
+nav a {
+    text-decoration: none;
+    width: 100%;
+    color: var(--white);
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#toggler,
+label {
+    display: none;
+}
+
+/* navbar */
+
+
+/* .nav_menu {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+/* .nav_menu>a {
+    font-size: 1rem;
+    color: var(--white);
+    letter-spacing: .1rem;
+    font-weight: 100;
+}
+
+.nav_brand {
+    width: 25%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.brand_logo {
+    width: 50%;
+} */
+
+/* hero section */
+
+.hero_section {
+    margin: 5rem auto 0rem auto;
+    width: 75%;
+    /* background: lightblue; */
+    padding: 6rem 5rem;
+    text-align: center;
+}
+
+.btn_div {
+    margin: 2.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_height {
+    height: 3.5rem;
+    width: 10rem;
+}
+
+.Catalogs_btn {
+    font-size: 1rem;
+    background: transparent;
+    margin-right: .7rem;
+    font-family: var(--prim-font);
+    color: var(--white);
+    border: 1px solid var(--white);
+    font-weight: 100;
+    letter-spacing: .1rem;
+}
+
+.Try_btn {
+
+    font-size: 1rem;
+    margin-right: 1rem;
+    font-family: var(--prim-font);
+    font-weight: 100;
+    border: 1px solid var(--yellow);
+    letter-spacing: .1rem;
+    background-color: var(--yellow);
+}
+
+/* img section */
+
+.image_section>img {
+    width: 100%;
+    margin-top: -9rem;
+}
+
+/* services section */
+
+.services_section {
+    width: 75%;
+    /* background-color: #ffc107; */
+    padding: 5rem 0;
+    margin: auto;
+
+}
+
+.services_paragraph {
+    text-align: center;
+    line-height: 2rem;
+    font-weight: 400;
+    width: 40%;
+    margin: auto;
+    /* background-color: #ffc107; */
+
+}
+
+.services_card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 6rem 0;
+}
+
+.cards {
+    width: 28%;
+    height: 11rem;
+    margin: 0 .6rem;
+    border: 3px solid var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card_name {
+    font-size: 1.4rem;
+
+}
+
+.icon_css {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: var(--yellow);
+}
+
+/* gallery section  */
+
+.gallery_section {
+    width: 75%;
+    /* background-color: #ffc107; */
+    padding: 5rem 0rem;
+    margin: auto;
+}
+
+.gallery_paragraph {
+    text-align: center;
+    line-height: 2rem;
+    font-weight: 400;
+    width: 42%;
+    margin: auto;
+    font-size: 1.3rem;
+    /* background-color: aqua; */
+}
+
+.row_one {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col_one {
+    width: 24%;
+}
+
+.img_row_one {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.row_two {
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col_two {
+    width: 37%;
+}
+
+.col_middle {
+    width: 23%;
+    text-align: center;
+}
+
+.img_row_two {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.img_row_middle {
+    height: 17rem;
+    margin: auto;
+    border-radius: 1rem;
+}
+.btn_row{
+    width: 100%;
+    text-align: center;
+}
+
+.gallery_btn {
+    font-size: 1.1rem;
+    font-family: var(--prim-font);
+    background: transparent;
+    height: 3.5rem;
+    width: 10rem;
+    margin: 1rem auto;
+    border: 2px solid var(--white);
+    color: var(--white);
+    text-align: center;
+}
+.gallery_btn:hover{
+    background-color: var(--white);
+    color: black;
+}
+
+/* partner section */
+
+.partner_section{
+    width: 75%;
+    /* background-color: #ffc107; */
+    padding: 3rem 0rem 5rem 0;
+    margin: auto;
+}
+
+.partner_paragraph{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+.partner_icons_row{
+    width: 80%;
+    margin: auto;
+    padding: 2.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: #ffc107; */
+}
+
+.client_section{
+    width:50%;
+    margin: auto;
+    padding: 5rem 0;
+    /* background-color: burlywood; */
+}
+
+.partner_card{
+/* background-color: #971313; */
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.card_css{
+width: 49%;
+background-color: rgb(4, 36, 95);
+padding: 3rem;
+height: fit-content;
+border-radius: 1rem;
+border: 1px solid var(--yellow);
+margin: .5rem 0;
+}
+.third_card_margins{
+    margin-top: -4.5rem;
+}
+.card_head{
+    display: flex;
+    align-items: center;
+}
+.card_img{
+    margin-right: 1.5rem;
+    
+}
+ .cd_name{
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+.card_body{
+    margin-top: 1.5rem;
+}
+.card_body > p {
+    font-size: 1rem;
+    letter-spacing: 0px;
+    line-height:  1.8rem; 
+    /* text-align: justify; */
+}
+
+/* offer_section */
+
+.offer_sec {
+    width: 75%;
+    background-color: rgb(4, 36, 95);
+    margin:4rem auto;
+    display: flex;
+    border-radius: 1rem;
+
+}
+
+.offer_col{
+    width: 50%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer_col > img{
+    width: 100%;
+    padding-bottom:0 ;
+    height: 350px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem; 
+}
+.col_des{
+    padding: 4rem;
+}
+
+.col_des > h2{
+font-size: 2.3rem;
+}
+
+.try_height{
+    width: 15rem;
+    height: 3.5rem;
+}
+
+/* footer section */
+
+.footer_container{
+    width: 80%;
+    padding: 3rem 0;
+    margin: auto;
+}
+
+.mega_menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.col_footer{
+    width: 30%;
+    background-color: ;
+}
+.text_center{
+    text-align: center;
+    width: 20%;
+
+}
+
+.text_center > p{
+font-size: 1.3rem;
+margin-bottom: 2rem;
+font-weight: 400;
+}
+
+li{
+    list-style: none;
+    margin: 1.3rem 0;
+    font-size: 1rem;
+    color: var(--white);
+    font-family: var(--prim-font);
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+}
+
+.img_div{
+    text-align: right;
+}
+
+.footer_logo{
+    width: 80%;
+    margin-right: -1rem;
+}
+
+.address{
+    margin: 1.75rem 0;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+i{
+    font-size: 2rem;
+    margin-right: 1.5rem;
+  
+}
+
+.footer_row{
+    padding: 5rem 0; 
+    text-align: center;
+}
+.footer_row > p{
+    font-size: 1rem;
+}
+
+
+/* ---------------------------------------------------------------------responsive----------------------------- */
+
+@media only screen and (max-width: 1200px) {
+
+    nav {
+        padding: 0rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+
+    }
+
+    .brand_logo {
+        width: 45%;
+        text-align: right;
+        padding: 0;
+    }
+
+    .menu {
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    label {
+        display: inline-flex;
+        width: 20%;
+    }
+
+    .logo_css {
+        width: 60%;
+    }
+
+    .fa-bars {
+        font-size: 1.4rem;
+        color: var(--white);
+        margin: auto;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list>li {
+        margin: .5rem 0;
+    }
+
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .row_one {
+        display: block;
+    }
+
+    .col_one {
+        width: 33%;
+        margin: 1rem auto;
+    }
+
+    .row_two {
+        display: block;
+    }
+
+    .col_two {
+        width: 50%;
+        margin: auto;
+
+    }
+
+    .col_middle {
+        width: 35%;
+        margin: 1.5rem auto;
+        /* background-color: #ffc107; */
+    }
+
+    .img_row_middle {
+        width: 100%;
+    }
+
+    .client_section{
+        width:75%;
+    }
+    
+    .partner_card{
+    /* background-color: #971313; */
+    display: flex;
+    
+    }
+    .card_css{
+    width: 49%;
+    padding: 2rem ;
+    
+    }
+    
+    .third_card_margins{
+        margin-top:-2.5rem;
+    }
+    
+    .card_img{
+        margin-right: 1.2rem;
+        
+    }
+     .cd_name{
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+    
+    .card_body{
+        margin-top: 1rem;
+    }
+    .card_body > p {
+        font-size: .9rem;
+        text-align: justify;
+        
+    }
+
+
+}
+
+/* ********************************************************************************************* */
+
+@media only screen and (max-width: 992px) {
+    p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 3.3rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .hero_section {
+        margin: 5rem auto 0rem auto;
+        width: 80%;
+        padding: 6rem 5rem;
+
+    }
+
+
+    .services_paragraph {
+        width: 45%;
+    }
+
+    .services_card {
+        display: block;
+    }
+
+    .cards {
+        width: 45%;
+        margin: 1.5rem auto;
+    }
+
+    .gallery_section {
+        width: 80%;
+    }
+
+    .gallery_paragraph {
+        width: 50%;
+    }
+
+    .row_one {
+        display: block;
+    }
+
+    .col_one {
+        width: 35%;
+        margin: 1rem auto;
+    }
+
+    .row_two {
+        display: block;
+    }
+
+    .col_two {
+        width: 50%;
+        margin: auto;
+
+    }
+
+    .col_middle {
+        width: 35%;
+        margin: 1.5rem auto;
+        /* background-color: #ffc107; */
+    }
+
+    .img_row_middle {
+        width: 100%;
+    }
+    .partner_icons_row{
+        width: 100%;
+        justify-content: space-around;
+       
+    }
+.col > img{
+    width: 75%;
+}
+
+.client_section{
+    width:80%;
+}
+
+.partner_card{
+/* background-color: #971313; */
+display: block;
+
+}
+.card_css{
+width: 100%;
+padding: 2rem ;
+margin: 1.5rem auto;
+}
+
+
+.card_img{
+    margin-right: 1.2rem;
+    
+}
+ .cd_name{
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+.card_body{
+    margin-top: 1rem;
+}
+.card_body > p {
+    font-size: .9rem;
+    text-align: justify;
+    
+}
+
+.offer_sec {
+    width: 75%;
+    display: block;
+    border-radius: 0;
+}
+
+.offer_col{
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+}
+
+.offer_col > img{
+    width: 100%;
+    height: auto;
+    border-radius: 0; 
+}
+.col_des{
+    padding: 4rem ;
+}
+
+.col_des > h2{
+font-size: 2.5rem;
+}
+
+.try_height{
+    width: 15rem;
+    height: 3.5rem;
+}
+
+}
+
+/* ******************************************************************************************** */
+@media only screen and (max-width: 820px) {
+
+    nav {
+        padding: 0rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .brand_logo {
+        width: 50%;
+        text-align: right;
+        padding: 0
+    }
+
+    .menu {
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    label {
+        display: inline-flex;
+        width: 20%;
+    }
+
+    .logo_css {
+        width: 60%;
+    }
+
+    .fa-bars {
+        font-size: 1.4rem;
+        color: var(--white);
+        margin: auto;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list>li {
+        margin: .5rem 0;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    .services_paragraph {
+        width: 50%;
+    }
+
+    .services_card {
+        display: block;
+    }
+
+    .cards {
+        width: 60%;
+        margin: 1.5rem auto;
+    }
+
+    .gallery_section {
+        width: 80%;
+    }
+
+    .gallery_paragraph {
+        width: 54%;
+    }
+
+    .row_one {
+        display: block;
+    }
+
+    .col_one {
+        width: 40%;
+        margin: 1rem auto;
+    }
+
+    .row_two {
+        display: block;
+    }
+
+    .col_two {
+        width: 50%;
+        margin: auto;
+
+    }
+
+    .col_middle {
+        width: 40%;
+        margin: 1.5rem auto;
+        /* background-color: #ffc107; */
+    }
+
+    .img_row_middle {
+        width: 100%;
+    }
+
+    .partner_icons_row{
+        width: 100%;
+        justify-content: space-around;
+       
+    }
+.col > img{
+    width: 75%;
+}
+
+.offer_sec {
+    width: 80%;
+    display: block;
+    border-radius: 0;
+}
+
+.offer_col{
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+}
+
+.offer_col > img{
+    width: 100%;
+    height: auto;
+    border-radius: 0; 
+}
+.col_des{
+    padding: 4rem;
+}
+
+.col_des > h2{
+font-size: 2.5rem;
+}
+
+.try_height{
+    width: 13rem;
+    height: 3.5rem;
+}
+
+.footer_container{
+    width: 80%;
+}
+
+.mega_menu{
+    display: flex;
+   flex-wrap: wrap;
+}
+.col_footer{
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text_center{
+    text-align: center;
+    width: 50%;
+    margin: 1.5rem 0;
+
+}
+
+.text_center > p{
+font-size: 1.2rem;
+}
+
+li{
+    font-size: 1rem;
+}
+
+.img_div{
+    text-align: center;
+    margin: auto;
+}
+
+.footer_logo{
+    width: 100%;
+    margin: 1rem auto ;
+}
+
+.address{
+    display: flex;
+    margin: .7rem 0;
+}
+
+.footer_row{
+    padding: 4rem 0; 
+}
+
+}
+
+/* ***************************************************************************** */
+@media only screen and (max-width: 762px) {
+
+    nav {
+        padding:  1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .brand_logo {
+        width: 75%;
+        text-align: right;
+        padding: 0;
+    }
+
+    .menu {
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    label {
+        display: inline-flex;
+        width: 20%;
+    }
+
+    .logo_css {
+        width: 60%;
+    }
+
+    .fa-bars {
+        font-size: 1.4rem;
+        color: var(--white);
+        margin: auto;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .list>li {
+        margin: .5rem 0;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 2.rem;
+    }
+
+    .hero_section {
+        margin: 5rem auto 0rem auto;
+        width: 82%;
+        padding: 6rem 4rem;
+
+    }
+
+    .services_paragraph {
+        width: 52.5%;
+    }
+
+    .services_card {
+        display: block;
+    }
+
+    .cards {
+        width: 60%;
+        margin: 1.5rem auto;
+    }
+
+    .gallery_section {
+        width: 80%;
+    }
+
+    .gallery_paragraph {
+        width: 60%;
+        font-size: 1.1rem;
+    }
+
+    .row_one {
+        display: block;
+    }
+
+    .col_one {
+        width: 40%;
+        margin: 1rem auto;
+    }
+
+    .row_two {
+        display: block;
+    }
+
+    .col_two {
+        width: 50%;
+        margin: auto;
+
+    }
+
+    .col_middle {
+        width: 40%;
+        margin: 1.5rem auto;
+        /* background-color: #ffc107; */
+    }
+
+    .img_row_middle {
+        width: 100%;
+    }
+
+    .partner_icons_row{
+        width: 100%;
+        justify-content: space-around;
+       
+    }
+.col > img{
+    width: 70%;
+}
+
+.footer_container{
+    width: 85%;
+}
+
+.mega_menu{
+    display: flex;
+   flex-wrap: wrap;
+}
+.col_footer{
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text_center{
+    text-align: center;
+    width: 50%;
+    margin: 1.5rem 0;
+
+}
+
+.text_center > p{
+font-size: 1.2rem;
+}
+
+li{
+    font-size: 1rem;
+}
+
+.img_div{
+    text-align: center;
+    margin: auto;
+}
+
+.footer_logo{
+    width: 100%;
+    margin: 1rem auto ;
+}
+
+.address{
+    display: flex;
+    margin: .7rem 0;
+}
+
+.footer_row{
+    padding: 4rem 0; 
+}
+
+.footer_container{
+    width: 85%;
+}
+
+.mega_menu{
+    display: flex;
+   flex-wrap: wrap;
+}
+.col_footer{
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text_center{
+    text-align: center;
+    width: 50%;
+    margin: 1.5rem 0;
+
+}
+
+.text_center > p{
+font-size: 1.2rem;
+}
+
+li{
+    font-size: 1rem;
+}
+
+.img_div{
+    text-align: center;
+    margin: auto;
+}
+
+.footer_logo{
+    width: 100%;
+    margin: 1rem auto ;
+}
+
+.address{
+    display: flex;
+    margin: .7rem 0;
+}
+
+.footer_row{
+    padding: 4rem 0; 
+}
+   
+}
+
+
+
+/* *************************************************************************************** */
+
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .brand_logo {
+        width: 75%;
+        text-align: right;
+        padding: 0;
+    }
+
+    .menu {
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    label {
+        display: inline-flex;
+        width: 20%;
+    }
+
+    .logo_css {
+        width: 60%;
+    }
+
+    .fa-bars {
+        font-size: 1.4rem;
+        color: var(--white);
+        margin: auto;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .list>li {
+        margin: .5rem 0;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 2.7rem;
+    }
+
+    .hero_section {
+        margin: 5rem auto 0rem auto;
+        width: 80%;
+        padding: 4rem;
+    }
+
+    .btn_div {
+        display: block;
+    }
+
+    .Try_btn {
+        margin: 1rem 0;
+    }
+
+    .Catalogs_btn {
+        margin: 1rem 0;
+    }
+
+    .image_section>img {
+        margin-top: -4rem;
+    }
+
+    .services_paragraph {
+        width: 95%;
+    }
+
+    .services_card {
+        display: block;
+    }
+
+    .cards {
+        width: 65%;
+        margin: 1.5rem auto;
+    }
+
+    .gallery_section {
+        width: 80%;
+    }
+
+    .gallery_paragraph {
+        width: 85%;
+        font-size: 1.1rem;
+    }
+
+    .row_one {
+        display: block;
+    }
+
+    .col_one {
+        width: 60%;
+        margin: 1.5rem auto;
+    }
+
+
+    .row_two {
+        display: block;
+    }
+
+    .col_two {
+        width: 100%;
+        margin: auto;
+    }
+
+    .col_middle {
+        width: 55%;
+        margin: 1.5rem auto;
+        /* background-color: #ffc107; */
+    }
+
+    .img_row_middle {
+        width: 100%;
+    }
+
+    .gallery_btn {
+        height: 3.2rem;
+        width: 9rem;
+    }
+    .partner_paragraph{
+        width: 80%;
+      letter-spacing: 1px;
+        text-align: center;
+    line-height: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .partner_icons_row{
+        width: 70%;
+        display: block;
+    }
+
+    .col{
+        width: 50%;
+        margin: 1.5rem auto;
+        text-align: center;
+    }
+
+    
+.client_section{
+    width:80%;
+}
+
+.partner_card{
+/* background-color: #971313; */
+display: block;
+
+}
+.card_css{
+width: 100%;
+padding: 2rem ;
+margin: 1.5rem auto;
+}
+
+
+.card_img{
+    margin-right: 1.2rem;
+    
+}
+ .cd_name{
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+.card_body{
+    margin-top: 1rem;
+}
+.card_body > p {
+    font-size: .9rem;
+    text-align: justify;
+    
+}
+
+/* offer_section */
+
+.offer_sec {
+    width: 80%;
+    display: block;
+    border-radius: 0;
+}
+
+.offer_col{
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+}
+
+.offer_col > img{
+    width: 100%;
+    height: auto;
+    border-radius: 0; 
+}
+.col_des{
+    padding: 4rem 2rem;
+}
+
+.col_des > h2{
+font-size: 2.2rem;
+}
+
+.try_height{
+    width: 13rem;
+    height: 3.5rem;
+}
+
+.footer_container{
+    width: 85%;
+}
+
+.mega_menu{
+    display: flex;
+   flex-wrap: wrap;
+}
+.col_footer{
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text_center{
+    text-align: center;
+    width: 50%;
+    margin: 1.5rem 0;
+
+}
+
+.text_center > p{
+font-size: 1.2rem;
+}
+
+li{
+    font-size: 1rem;
+}
+
+.img_div{
+    text-align: center;
+    margin: auto;
+}
+
+.footer_logo{
+    width: 100%;
+    margin: 1rem auto ;
+}
+
+.address{
+    display: flex;
+    margin: .7rem 0;
+}
+
+.footer_row{
+    padding: 4rem 0; 
+}
+
+
+
+}
+
+/* ****************************************************************************************** */
+
+@media only screen and (max-width: 450px) {
+
+    nav {
+        padding: .5rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+
+    }
+    
+
+    .brand_logo {
+        width: 75%;
+        text-align: right;
+        padding: 0;
+    }
+
+    
+    .menu {
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    label {
+        display: inline-flex;
+        width: 20%;
+    }
+    
+
+    .logo_css {
+        width: 60%;
+    }
+
+    .fa-bars {
+        font-size: 1.4rem;
+        color: var(--white);
+        margin: auto;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+
+    .list>li {
+        margin: .5rem 0;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    .hero_section {
+        margin: 5rem auto 0rem auto;
+        width: 80%;
+        padding: 3rem;
+    }
+
+    .image_section>img {
+        margin-top: -3rem;
+    }
+
+    .btn_div {
+
+        display: block;
+
+    }
+
+    .Try_btn {
+        margin: 1rem 0;
+    }
+
+    .Catalogs_btn {
+        margin: 1rem 0;
+    }
+
+    .services_paragraph {
+        width: 95%;
+    }
+
+    .services_card {
+        display: block;
+    }
+
+    .cards {
+        width: 75%;
+        margin: 1.5rem auto;
+    }
+
+    .gallery_section {
+        width: 80%;
+    }
+
+    .gallery_paragraph {
+        width: 100%;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .row_one {
+        display: block;
+    }
+
+    .col_one {
+        width: 55%;
+        margin: 1.5rem auto;
+    }
+
+    .row_two {
+        display: block;
+    }
+
+    .col_two {
+        width: 90%;
+        margin: auto;
+    }
+
+    .col_middle {
+        width: 55%;
+        margin: 1.5rem auto;
+        /* background-color: #ffc107; */
+    }
+
+    .img_row_middle {
+        width: 100%;
+    }
+
+    .gallery_btn {
+        height: 3.2rem;
+        width: 8.5rem;
+    }
+
+    .partner_icons_row{
+        width: 75%;
+        display: block;
+    }
+
+    .col{
+        width: 60%;
+        margin: 1.5rem auto;
+        text-align: center;
+    }
+
+.client_section{
+    width:85%;
+}
+
+.partner_card{
+display: block;
+
+}
+.card_css{
+width: 100%;
+padding: 1.5rem ;
+margin: 1.5rem auto;
+}
+
+
+.card_img{
+    margin-right: 1rem;
+    
+}
+ .cd_name{
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+.card_body{
+    margin-top: 1rem;
+}
+.card_body > p {
+    font-size: .9rem;
+    text-align: justify;
+    
+}
+
+
+.offer_sec {
+    width: 80%;
+    display: block;
+    border-radius: 0;
+}
+
+.offer_col{
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+}
+
+.offer_col > img{
+    width: 100%;
+    height: auto;
+    border-radius: 0; 
+}
+.col_des{
+    padding: 4rem 1.5rem;
+}
+
+.col_des > h2{
+font-size: 2rem;
+}
+
+.try_height{
+    width: 11rem;
+    height: 3rem;
+}
+
+.footer_container{
+    width: 85%;
+}
+
+.mega_menu{
+    display: flex;
+   flex-wrap: wrap;
+}
+.col_footer{
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text_center{
+    text-align: center;
+    width: 50%;
+    margin: 1.5rem 0;
+
+}
+
+.text_center > p{
+font-size: 1.2rem;
+}
+
+li{
+    font-size: 1rem;
+}
+
+.img_div{
+    text-align: center;
+    margin: auto;
+}
+
+.footer_logo{
+    width: 100%;
+    margin: 1rem auto ;
+}
+
+.address{
+    display: flex;
+    margin: .7rem 0;
+}
+
+.footer_row{
+    padding: 4rem 0; 
+}
+
+}
+
+/* *************************************************************************************************** */
+
+@media only screen and (max-width: 325px) {
+
+    p {
+        font-size: .9rem;
+    }
+
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    .hero_section {
+        margin: 5rem auto 0rem auto;
+        width: 85%;
+        padding: 3rem;
+
+    }
+
+    .image_section>img {
+        margin-top: -2rem;
+    }
+
+    .services_paragraph {
+        width: 95%;
+    }
+
+    .services_card {
+        display: block;
+    }
+
+    .cards {
+        width: 90%;
+        margin: 1.5rem auto;
+    }
+
+    .gallery_section {
+        width: 80%;
+    }
+
+    .gallery_paragraph {
+        width: 80%;
+        font-size: 1.1rem;
+    }
+
+    .partner_icons_row{
+        width: 75%;
+        display: block;
+    }
+
+    .col{
+        width: 60%;
+        margin: 1.5rem auto;
+        text-align: center;
+    }
+
+    
+.client_section{
+    width:85%;
+}
+
+.partner_card{
+display: block;
+
+}
+.card_css{
+width: 100%;
+padding: 1.5rem ;
+margin: 1.5rem auto;
+}
+
+
+.card_img{
+    margin-right: 1rem;
+    width:30px;
+    
+}
+ .cd_name{
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+
+.card_body{
+    margin-top: 1rem;
+}
+.card_body > p {
+    font-size: .9rem;
+    text-align: justify;
+}
+
+
+.offer_sec {
+    width: 80%;
+    display: block;
+    border-radius: 0;
+}
+
+.offer_col{
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+}
+
+.offer_col > img{
+    width: 100%;
+    height: auto;
+    border-radius: 0; 
+}
+.col_des{
+    padding: 4rem 1.5rem;
+}
+
+.col_des > h2{
+font-size: 1.8rem;
+}
+
+.try_height{
+    width: 10rem;
+    height: 3rem;
+}
+
+.footer_container{
+    width: 85%;
+}
+
+.mega_menu{
+    display: flex;
+   flex-wrap: wrap;
+}
+.col_footer{
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text_center{
+    text-align: center;
+    width: 50%;
+    margin: 1.5rem 0;
+
+}
+
+.text_center > p{
+font-size: 1.2rem;
+}
+
+li{
+    font-size: 1rem;
+}
+
+.img_div{
+    text-align: center;
+    margin: auto;
+}
+
+.footer_logo{
+    width: 100%;
+    margin: 1rem auto ;
+}
+
+.address{
+    display: flex;
+    margin: .7rem 0;
+}
+
+.footer_row{
+    padding: 4rem 0; 
+}
+
+}

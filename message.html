@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- custom css -->
+
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/notification.css">
+
+    <!-- font font-awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+        integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav>
+        <div class="brand_logo"><a href="">
+                <img src="./images/logo.d4caf79b.png" class="logo_css" alt=""> </a>
+        </div>
+        <label for="toggler"> <i class="fas fa-bars"></i> </label>
+        <input type="checkbox" id="toggler">
+        <div class="menu">
+            <ul class="list">
+                <li>Home</li>
+                <li>Product</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Languages</li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar closed  -->
+
+    <div class="main">
+
+        <!-- sidebar  -->
+        <div class="sidebar">
+            <div class="sidebar_logo">
+                <a href="./home.html"> <img src="./images/logo.d4caf79b.png" alt="">
+                </a>
+            </div>
+            <div class="sidebar_menu">
+                <a href="./dashboard.html" class="link"> <i class="fas fa-tachometer-alt-fast"></i>
+                    <span>Overview</span> </a>
+                <a href="./order.html" class="link"> <i class="fa-solid fa-users-line"></i> <span>Order History</span>
+                </a>
+                <a href="./account.html" class="link"> <i class="fa-solid fa-house-laptop"></i> <span> Accounts</span>
+                </a>
+                <a href="./notification.html" class="link"> <i class="far fa-address-card"></i> <span>
+                        Notifications</span> </a>
+                <a href="./message.html" class="link"> <i class="fa-solid fa-book"></i> <span>Messages </spa<n> </a>
+                <a href="./setting.html" class="link"> <i class="fa-solid fa-gear"></i> <span> Settings</span> </a>
+
+            </div>
+            <div class="logout">
+
+                <a href="./setting.html" class=" logoutbtn"> <span> Logout</span> <i class="fa-solid fa-gear"></i> </a>
+
+            </div>
+
+        </div>
+        <!-- sidebar closed  -->
+
+        <!-- main content  -->
+
+        <div class="main_content">
+
+            <!-- head row  -->
+
+            <div class="top_row">
+
+                <div class="headcss">
+                    <h2>Messages</h2>
+                    <p>All messages here</p>
+                </div>
+
+                <!-- account row -->
+
+                <div class="accountrow">
+                    <div class="iconrow">
+                        <small> <i class="fas fa-question-circle helpicon"></i>help</small>
+                        <div class="dropdown">
+                            <small class="dropbtn"><i class="fas fa-envelope"></i></small>
+
+                            <div class="dropdown-content">
+                               <p class="para_messages">
+                                Messages
+                               </p>
+                               <p class="para_date">2 days ago</p>
+                               <hr>
+                               <div class="dismiss_sec">
+
+                                <p class="para_date">You have 3 new Messages</p>
+                                <p class="para_date dismiss_css">dismiss</p>
+                               </div>
+
+                               <button class="viewall">
+                                View All
+                               </button>
+                              </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <small class="dropbtn"><i class="fas fa-bell"></i></small></small>
+                            <div class="dropdown-content dropdown-content-two ">
+                               <p class="para_messages">
+                                Messages
+                               </p>
+                               <p class="para_date">2 days ago</p>
+                               <hr>
+                               <div class="dismiss_sec">
+
+                                <p class="para_date">You have 3 new Messages</p>
+                                <p class="para_date dismiss_css">dismiss</p>
+                               </div>
+
+                               <button class="viewall">
+                                View All
+                               </button>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="account">
+                        <img src="./images/profile.png" alt="" class="accountimage">
+                        <div class="accountname">
+                            <p>
+                                Adil</p>
+                                <div class="dropdown">
+                                    <p>account details</p>
+                                    <div class="dropdown-content">
+                                      <a href="./account.html" class="navlink">
+                                        Account Detatils
+                                      </a>
+                                      <a href="./dashboard.html" class="navlink">Overview</a>
+                                      <a href="./order.html" class="navlink">Order History</a>
+                                      <a href="./notification.html" class="navlink"> Notifications</a>
+                                      <a href="./message.html" class="navlink">Messages</a>
+                                      <a href="./setting.html" class="navlink">Settings</a>
+                                    </div>
+                                  </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- notification section -->
+
+            <div class="notification_section">
+                <table>
+                    <!-- one -->
+                    <tr>
+                        <td>
+                            <div class="notification_head">
+                                <h2>Open Messages </h2>
+                                <p>All Messages </p>
+                            </div>
+
+                            <div class="status_butttons">
+                                <a href=""><button class="unread_button">Open</button></a>
+                                <a href=""><button class="read_button">Closed</button></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- two -->
+                    <tr>
+                        <td class="hover_row">
+                            <div class="notification_head">
+                                <strong>Order Type - Order Number</strong>
+                                <div class="order_div">
+                                <p>One minute ago </p>
+                                <a href="">Reply</a >
+                                </div>
+                            </div>
+
+                            <div class="status_butttons">
+                                <a href=""><button class="dismiss">2</button></a>
+                               
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- three -->
+                    <tr>
+                        <td class="hover_row">
+                            <div class="notification_head">
+                                <strong>Message Subject  </strong>
+                                <div class="order_div">
+                                    <p>One minute ago </p>
+                                <a href="">Reply</a >
+                                </div>   
+                            </div>
+
+                            <div class="status_butttons">
+                                <a href=""><button class=" dismiss ">6</button></a>
+                               
+                            </div>
+                        </td>
+                    </tr>
+                    
+                     <!-- four -->
+                     <tr>
+                        <td class="hover_row">
+                            <div class="notification_head">
+                                <strong>Order Type - Order Number </strong>
+                                <div class="order_div">
+                                    <p>One minute ago </p>
+                                <a href="">Reply</a >
+                                </div>   
+                            </div>
+
+                            <div class="status_butttons">
+                                <a href=""><button class=" dismiss ">4</button></a>
+                               
+                            </div>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+
+            <!-- notification section closed -->
+
+
+            <!-- help row -->
+
+            <div class="helprow notification_footer">
+                <a href="./message.html"> <i class="fas fa-question-circle"></i><span>help</span></a>
+            </div>
+
+            <!-- help row closed -->
+
+            <!-- main content closed  -->
+
+        </div>
+
+
+</body>
+
+</html>
